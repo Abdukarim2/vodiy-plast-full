@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% block title %}
+<title>404</title>
+{% endblock %}
+
+{% block main %}
+    <header class="header" id="header">
+            {% include 'nav/nav.html' %}
+    </header>
+    <main class="main" id="main">
+        <h1 style="height:90vh; display:flex; justify-content:center; align-items:center; font-family:tahoma;">
+           404 Страница не найдена
+        </h1>  
+    </main>
+	<footer class="footer" id="footer">
+		<div class="container_lg">
+			<div class="footer_phone_number">
+				<p><a href="tel:998 00 500 10 00">+998 00 500 10 00</a></p>
+			</div>
+			<div class="footer_logo">
+				<a href="{% url 'main:index' %}">
+					<img src="/static/images/logo/logo.png" alt="">
+				</a>
+			</div>
+			<div class="footer_group">
+				<p>водий пласт 2022</p>
+				<p>сайт от MIAR group</p>
+			</div>
+		</div>
+	</footer>
+    <style>
+        .navbar_section{
+            position: relative;
+            background-color: #555555;
+        }
+    </style>
+{% endblock %}
